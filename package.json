@@ -1,11 +1,12 @@
 {
   "name": "scoutbook-scout",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "",
   "main": "scout.js",
   "dependencies": {
     "scoutbook-advancement": "github:troop66matawan/scoutbook-advancement#master",
-    "scoutbook-activities": "github:troop66matawan/scoutbook-activities#master"
+    "scoutbook-activities": "github:troop66matawan/scoutbook-activities#master",
+    "scoutbook-leadership": "github:troop66matawan/scoutbook-leadership"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

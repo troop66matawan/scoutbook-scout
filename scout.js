@@ -1,6 +1,7 @@
 "use strict";
 const ScoutbookAdvancement = require('scoutbook-advancement/advancement');
 const ScoutbookActivities = require('scoutbook-activities');
+const ScoutbookLeadership = require('scoutbook-leadership');
 
 class ScoutbookScout {
     constructor(bsaId, firstName, middleName, lastName, suffix) {
@@ -12,6 +13,7 @@ class ScoutbookScout {
         this._id = this.bsaId + '_' + this.firstName + '_' + this.middleName + '_' + this.lastName;
         this._advancement = new ScoutbookAdvancement();
         this._activities = new ScoutbookActivities();
+        this._leadership = new ScoutbookLeadership();
     }
 
     get advancement() {
@@ -19,6 +21,9 @@ class ScoutbookScout {
     }
     get activities() {
         return this._activities;
+    }
+    get leadership() {
+        return this._leadership;
     }
     get id() {
         return this._id;

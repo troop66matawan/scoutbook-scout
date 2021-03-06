@@ -10,7 +10,7 @@ class ScoutbookScout {
         this.middleName = middleName;
         this.lastName = lastName;
         this.suffix = suffix;
-        this._id = this.bsaId + '_' + this.firstName + '_' + this.middleName + '_' + this.lastName;
+        this._id = this.bsaId + '_' + this.firstName +  '_' + this.lastName;
         this._advancement = new ScoutbookAdvancement();
         this._activities = new ScoutbookActivities();
         this._leadership = new ScoutbookLeadership();

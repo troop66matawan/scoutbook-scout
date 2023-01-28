@@ -6,9 +6,9 @@ const ScoutbookLeadership = require('scoutbook-leadership');
 class ScoutbookScout {
     constructor(bsaId, firstName, middleName, lastName, suffix) {
         this.bsaId = bsaId;
-        this.firstName = firstName;
-        this.middleName = middleName;
-        this.lastName = lastName;
+        this.firstName = firstName.trim();
+        this.middleName = middleName.trim();
+        this.lastName = lastName.trim();
         this.suffix = suffix;
         this._id = this.bsaId + '_' + this.firstName +  '_' + this.lastName;
         this._advancement = new ScoutbookAdvancement();
